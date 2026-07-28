@@ -1,4 +1,4 @@
--- Bank Term Deposit Campaign — Conversion Analysis
+-- Bank Term Deposit Campaign - Conversion Analysis
 
 11,162 mijoz ma'lumotlari asosida bank muddatli deposit kampaniyasining konversiya ko'rsatkichlarini tahlil qilish eng samarali mijozlar segmentini aniqlash va marketing resurslarini optimallashtirish bo'yicha tavsiyalar ishlab chiqish.
 
