@@ -2,8 +2,6 @@
 
 11,162 mijoz ma'lumotlari asosida bank muddatli deposit kampaniyasining konversiya ko'rsatkichlarini tahlil qilish eng samarali mijozlar segmentini aniqlash va marketing resurslarini optimallashtirish bo'yicha tavsiyalar ishlab chiqish.
 
----
-
 -- 1. Business Problem
 
 Bank telefon orqali muddatli deposit mahsulotini sotmoqchi.Marketing bo'limi cheklangan resurs (operatorlar vaqti, qo'ng'iroqlar soni) bilan konversiya darajasini oshirishni xohlaydi.
@@ -37,11 +35,11 @@ Har bir segment uchun konversiya darajasini solishtirib, eng katta farq qayerda 
 
 - Oldingi kampaniyada muvaffaqiyatli bo'lgan mijozlarning konversiya darajasi 91.3% - bu butun datasetdagi eng kuchli signal. Solishtirish uchun: "failure" bo'lganlarda 50.3%, "unknown" (umuman kontakt qilinmagan) mijozlarda 40.7%
 
-- Qo'ng'iroq 300 sekunddan uzoq davom etganda konversiya 72.2%, qisqa qo'ng'iroqlarda esa atigi 28.7%** - 2.5 baravar farq
+- Qo'ng'iroq 300 sekunddan uzoq davom etganda konversiya 72.2%, qisqa qo'ng'iroqlarda esa atigi 28.7% - 2.5 baravar farq
 
 - May oyida qo'ng'iroqlar soni eng yuqori (2,824 ta) lekin bu oy konversiya darajasi bo'yicha eng samarali oy emas - resurslarning noto'g'ri taqsimlanishini ko'rsatadi
 
-- Tertiary ta'lim darajasidagi mijozlarda konversiya 54.1%, primary darajada esa 39.4%** - ta'lim darajasi bilan konversiya orasida aniq bog'liqlik bor (secondary - 44.7%, unknown - 50.7%)
+- Tertiary ta'lim darajasidagi mijozlarda konversiya 54.1%, primary darajada esa 39.4% - ta'lim darajasi bilan konversiya orasida aniq bog'liqlik bor (secondary - 44.7%, unknown - 50.7%)
 
 - 3+ marta kontakt qilingan mijozlarda konversiya (63.8%) va 1–3 marta kontakt qilinganlarda (62.9%) deyarli farq yo'q - demak kontakt sonini 1 dan 3 gacha oshirish yetarli undan ortig'i qo'shimcha samara bermaydi. Hali kontakt qilinmagan ("yangi") mijozlarda esa bu ko'rsatkich 37.3% - bu segmentga alohida yondashuv kerakligini ko'rsatadi
 
@@ -55,53 +53,15 @@ Har bir segment uchun konversiya darajasini solishtirib, eng katta farq qayerda 
 
 4. Kontakt sonini 3 tadan oshirmaslik - 3+ marta qo'ng'iroq qilish qo'shimcha konversiya bermayapti bu operator vaqtini behuda sarflash degani. Kontakt limitini 3 ta bilan cheklash tavsiya etiladi.
 
-5. **Ta'lim darajasiga qarab xabar matnini moslashtirish** — tertiary darajadagi mijozlar uchun batafsilroq, moliyaviy asoslangan taklif; primary darajadagi mijozlar uchun soddaroq, tushunarliroq xabar tayyorlash mumkin.
+5. Ta'lim darajasiga qarab xabar matnini moslashtirish - tertiary darajadagi mijozlar uchun batafsilroq, moliyaviy asoslangan taklif; primary darajadagi mijozlar uchun soddaroq, tushunarliroq xabar tayyorlash mumkin.
 
----
+-- 6. Tools Used
 
-## 6. Dashboard
+- MySQL - ma'lumotlarni saqlash va SQL orqali tahlil qilish
+- Power BI Desktop - dashboard va vizualizatsiya
+- DAX - measure va calculated column'lar (Conversion Rate%, duration_segment, contact_segment, deposit_flag)
 
-Power BI'da 4 ta asosiy vizual yaratildi:
 
-1. **Poutcome vs Conversion Rate** — oldingi kampaniya natijasining joriy konversiyaga ta'siri
-2. **Call Duration vs Conversion Rate** — qo'ng'iroq davomiyligining ta'siri
-3. **Monthly Call Volume vs Conversion Rate** — oylik qo'ng'iroq hajmi va samaradorlik dinamikasi
-4. **Education Level vs Conversion Rate** — ta'lim darajasi bo'yicha segmentatsiya
 
-![Dashboard Screenshot](./dashboard_screenshot.png)
 
----
 
-## 7. Tools Used
-
-- **MySQL** — ma'lumotlarni saqlash va SQL orqali tahlil qilish
-- **Power BI Desktop** — dashboard va vizualizatsiya
-- **DAX** — measure va calculated column'lar (Conversion Rate %, duration_segment, contact_segment, deposit_flag)
-
----
-
-## 8. Repository Structure
-
-```
-bank-marketing-analysis/
-├── README.md
-├── main_queries.sql
-├── additional_queries.sql
-└── dashboard_screenshot.png
-```
-
----
-
-## Additional SQL Queries
-
-Quyidagi query'lar asosiy tahlilni to'ldiruvchi qo'shimcha tekshiruvlar sifatida bajarilgan:
-
-- Job kategoriyasi bo'yicha mijozlar soni va o'rtacha balans
-- Kredit defaultiga uchraganlarning o'rtacha balansi
-- Uy-joy krediti bo'lgan mijozlar orasida deposit konversiya foizi
-- Balans segmentatsiyasi (low/medium/high)
-- Har bir job kategoriyasi ichida deposit bo'yicha RANK
-- Oldingi kontakt soni bo'yicha kogort tahlili
-- Oy bo'yicha deposit ochgan mijozlar sonining oldingi oy bilan solishtirilishi (MoM growth)
-
-To'liq SQL kodlari: [`additional_queries.sql`](./additional_queries.sql)
