@@ -45,7 +45,7 @@ Har bir segment uchun konversiya darajasini solishtirib, eng katta farq qayerda 
 
 -- 5. Recommendation
 
-1. Retargeting'ga ustuvorlik berish - oldingi kampaniyada muvaffaqiyatli bo'lgan mijozlar (91.3% konversiya) eng arzon va eng samarali segment. Operatorlar birinchi navbatda shu ro'yxatga qo'ng'iroq qilishi kerak.
+1. Retargeting'ga ustuvorlik berish - oldingi kampaniyada "success" bo'lgan mijozlar (91.3% konversiya) eng arzon va eng samarali segment. Operatorlar birinchi navbatda shu ro'yxatga qo'ng'iroq qilishi kerak.
 
 2. Operatorlarni suhbatni davom ettirishga o'rgatish - qo'ng'iroq davomiyligi bilan konversiya o'rtasidagi kuchli bog'liqlik shuni ko'rsatadiki operatorlarga mijozni tezroq "yo'q" deb qo'yib yubormaslik savollarga to'liq javob berish bo'yicha training kerak.
 
