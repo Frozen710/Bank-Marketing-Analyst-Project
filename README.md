@@ -4,7 +4,7 @@
 
 -- 1. Business Problem
 
-Bank telefon orqali muddatli deposit mahsulotini sotmoqchi.Marketing bo'limi cheklangan resurs (operatorlar vaqti, qo'ng'iroqlar soni) bilan konversiya darajasini oshirishni xohlaydi.
+Bank telefon orqali muddatli deposit mahsulotini sotmoqchi.Marketing bo'limi resurslardan foydalanib (operatorlar vaqti, qo'ng'iroqlar soni) bilan konversiya darajasini oshirishni xohlaydi.
 
 Asosiy savol: Qaysi mijozlar segmenti va qanday kontakt strategiyasi eng yuqori konversiyani beradi va joriy kampaniya qayerda resurslarni behuda sarflayapti?
 
