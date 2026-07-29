@@ -33,7 +33,7 @@ Har bir segment uchun konversiya darajasini solishtirib, eng katta farq qayerda 
 
 - Baseline konversiya darajasi 47.4% (5289 mijoz deposit ochgan, 5873 mijoz ochmagan) - mijozlarning deyarli yarmi deposit ochgan bu segmentatsiya uchun yaxshi asos
 
-- Oldingi kampaniyada muvaffaqiyatli bo'lgan mijozlarning konversiya darajasi 91.3% - bu butun datasetdagi eng kuchli signal. Solishtirish uchun: "failure" bo'lganlarda 50.3%, "unknown" (umuman kontakt qilinmagan) mijozlarda 40.7%
+- Oldingi kampaniyada "success" bo'lgan mijozlarning konversiya darajasi 91.3% - bu butun datasetdagi eng kuchli signal. Solishtirish uchun: "failure" bo'lganlarda 50.3%, "unknown" (umuman kontakt qilinmagan) mijozlarda 40.7%
 
 - Qo'ng'iroq 300 sekunddan uzoq davom etganda konversiya 72.2%, qisqa qo'ng'iroqlarda esa atigi 28.7% - 2.5 baravar farq
 
