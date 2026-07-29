@@ -11,9 +11,9 @@ Asosiy savol: Qaysi mijozlar segmenti va qanday kontakt strategiyasi eng yuqori 
 
 -- 2. Dataset
 
-Parametr | Qiymat 
-Manba | Bank Marketing Dataset (UCI Machine Learning Repository)
-Hajmi | 11,162 mijoz 
+Parametr | Qiymat, 
+Manba | Bank Marketing Dataset (UCI Machine Learning Repository),
+Hajmi | 11,162 mijoz, 
 Ustunlar | age, job, marital, education, default, balance, housing, loan, contact, day, month, duration, campaign, pdays, previous, poutcome, deposit
 
 Cheklovlar
