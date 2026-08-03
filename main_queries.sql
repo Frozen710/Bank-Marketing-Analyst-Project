@@ -55,8 +55,26 @@ Where campaign >= 2
 Group by kontakt_kogortlar
 Order by conversion_rate desc
 
+-- 7-Savol CAC ni hisoblash job, contact bo'yicha
 
+Select 
+    job, contact,
+    Sum(campaign) / Nullif(Sum(Case When deposit = 'yes' Then 1 Else 0 End), 0) as CAC,
+    Round(100.0 * Sum(Case When deposit = 'yes' Then 1 Else 0 End) / Count(*), 2) as ConversionRate
+From bank
+Where contact <> 'unknown'
+Group By job, contact
+Order By CAC Asc;
 
+-- 8-Savol Z-test hisoblash contact bo'yicha n va x
+
+Select 
+    contact,
+    Count(*) as n,
+    Sum(Case When deposit = 'yes' Then 1 Else 0 End) as x
+From bank
+Where contact <> 'unknown'
+Group By contact;
 
 
 
